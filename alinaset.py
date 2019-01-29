@@ -13,6 +13,7 @@ class AlinaSet(object):
     def __init__(self, x = []):
         self.my_dict = {}
 
+
     """
     BONUS - try after the rest
 
@@ -47,7 +48,7 @@ class AlinaSet(object):
     returns the number of members of the AlinaSet
     """
     def size(self):
-        pass
+        return len(self.my_dict)
 
     """
     returns an AlinaSet that contains all elements of self that also belong to
@@ -70,9 +71,7 @@ TESTS GO HERE
 
 # an initialized AlinaSet is empty
 a = AlinaSet()
-a.my_dict[4] = 'butt'
-print(a.my_dict)
-# assert(a.size() == 0)
+assert(a.size() == 0)
 
 # you can add to an AlinaSet
 # a = AlinaSet()
