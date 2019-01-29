@@ -35,13 +35,13 @@ class AlinaSet(object):
     """
     adds a member to the AlinaSet
     """
-    def add(self,x):
-        pass
+    def add(self, member):
+        self.my_dict[member] = True
 
     """
     removes a member to the AlinaSet
     """
-    def remove(self, x):
+    def remove(self, member):
         pass
 
     """
@@ -74,8 +74,9 @@ a = AlinaSet()
 assert(a.size() == 0)
 
 # you can add to an AlinaSet
-# a = AlinaSet()
-# a.add(4)
+a = AlinaSet()
+a.add(4)
+assert(a.size() == 1)
 # assert(a.contains(4) is True)
 
 # you can remove from an AlinaSet
